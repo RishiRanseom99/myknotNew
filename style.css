@@ -1,6 +1,124 @@
 html {
     scroll-behavior: smooth;
+    
   }
-nav{
-    background-color: #faebd7;
+
+
+.navbar{
+    background-image:linear-gradient(to right,white,darkcyan,white); 
+}
+
+@media  (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color:#ffffff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block;}
+	
+}	
+
+.nav-link{
+    font-size: 18px;
+}
+
+
+/*           
+                   
+                INTRODUCTION START
+    
+*/
+#introduction{
+  
+    width:99%;
+    height:80vh;
+    
+    display: flex;
+    background-color: darkcyan;
+   
+    align-items: center;
+    margin: auto;
+   
+}
+#intro__title{
+    width:50%;
+    text-align: center;
+    
+    
+}
+#intro__title>p{
+    width: 70%;
+
+    margin: auto;
+    font-weight: 600;
+    color:whitesmoke;
+}
+.highlight {
+    font-size: 4vmin;
+    color: rgb(255, 166, 0);
+}
+#intro__image{
+    width: 50%;
+    max-height: 100%;
+    overflow:hidden;
+    
+    
+    
+}
+#intro__image>img{
+    max-width: 100%;
+    /* padding: 20px; */
+    min-height: 70vmin;
+    max-height: 100%;
+    display: block;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .navbar{
+        background-image:linear-gradient(to right,rgb(246, 253, 253),rgb(221, 247, 248),darkcyan); 
+    }
+    #introduction{
+        flex-direction: column;
+    }
+    #intro__title{
+        margin-top: 10vmin;
+        width: 100%;
+        margin-bottom: 13vmin;
+    }
+    #intro__image{
+        width: 98%;
+        
+    }
+    #intro__image>img{
+        border-radius: 50px;
+    }
+}
+
+/*           
+                   
+                INTRODUCTION END
+    
+*/
+
+/*           
+                   
+                FORM START
+    
+*/
+#form__section{
+    width:99%;
+    min-height: 80%;
+   border: 1px solid red;
+    background-color: grey;
+}
+#form__fill{
+    width: 50%;
+    background-color: rgb(173, 166, 173);
+}
+#form__fill>form{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(253, 253, 251);
+}
+#form__fill>form input{
+    width: 100%;
 }
