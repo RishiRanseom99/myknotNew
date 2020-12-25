@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+
+     <!-- Animations -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- title -->
     <title>My Knot Services</title>
 </head>
 <body>
@@ -19,27 +25,27 @@
         <div class="collapse navbar-collapse" id="collapse_target"> 
             <ul class="navbar-nav">
                 <li class="nav-item px-md-2">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item px-md-2 dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target" href="#">Our Services</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                        <a class="dropdown-item">SEO</a>
-                        <a class="dropdown-item">Digital Marketing</a>
+                        <a class="dropdown-item" href="./services/Seo.html">SEO</a>
+                        <a class="dropdown-item" href="./services/Seo.html">Digital Marketing</a>
                        
                     </div>
                 </li>
                 <li class="nav-item px-md-2 dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target2" href="#">Industries We Serve</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown_target2">
-                        <a class="dropdown-item">Education</a>
-                        <a class="dropdown-item">Healthcare</a>
-                        <a class="dropdown-item">Technology</a>
-                        <a class="dropdown-item">Travel</a>
+                        <a class="dropdown-item" href="./industries/industries.html">Education</a>
+                        <a class="dropdown-item" href="./industries/industries.html">Healthcare</a>
+                        <a class="dropdown-item" href="./industries/industries.html">Technology</a>
+                        <a class="dropdown-item" href="./industries/industries.html">Travel</a>
                     </div>
                 </li>
                 <li class="nav-item px-md-2">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 
             </ul>
@@ -67,75 +73,262 @@
 
 <!-- introduction end -->
 
+<!-- Type 0f service  start-->
+<div id="Service">
+    <div id="Service__heading">
+        <p>Our Services</p>
+    </div>
+    <div id="Service__items">
+        <div class="Service__item1 wow fadeInLeft"  data-wow-delay="0.3s">
+           <img  src="./images/seo-analysis.jpg" />
+           <div class="Service__description">
+               <p class="Service__description__heading">Buisness Oriented Seo Services</p>
+               <p class="Service__description__body">Every SEO Campaign have different Challenges. We provide Business Oriented, distinctive and reliable services for enhancing the presence of business online and fulfill the sales demand. You get to have your pick of the SEO services that meet with your requirements to Achieve Your Campaign Goal.</p>
+           </div>
+        </div>
+        <div class="Service__item2 wow fadeInRight" data-wow-delay="0.3s">
+           <img src="./images/digital-marketing.jpeg" />
+           <div class="Service__description">
+            <p class="Service__description__heading">We Breathe Digital. Let Us Do It For You.</p>
+            <p class="Service__description__body">We are a Creatively Led, Strategically Driven, Techno-Friendly Full Service Digital Marketing Agency with years of Expertise. We have Created Many Powerful Brand Experiences for Our Clients Worldwide.Want to Experience Result-Oriented Digital Marketing for you Company!Contact Now to re-shape your Digital Strategies</p>
+            </div>
+       </div>
+        
+    </div>
+</div>
+<!-- Type of service end -->
+
+
 
 <!-- form part start-->
-<div class="form__section">
+<div id="form__section">
     <div id="form__fill">
+        <p class="form__right__heading">Discuss Your Budget With Us</p>
         <form>
-            <p>Discuss Your Budget With Us</p>
-            <input type="text" placeholder="Name"><br>
-            <input type="email" placeholder="Enter your Email"><br>
-            <input type="tel" placeholder="Enter your Phone-No"><br>
-            </form>
-        </div>
-    </div id="form__right"> 
+            <input type="text" placeholder=" Name"><br>
+            <input type="email" placeholder=" Email"><br>
+            <input type="tel" placeholder=" Phone-No"><br>
+            <input type="text" placeholder=" Company Name"><br>
+            <select>
+                <option name="SEO" value="SEO" disabled selected>Choose your service</option>
+                <option name="SEO" value="SEO">&nbsp;SEO</option>
+                <option name="Digital Marketing" value="Digital Marketing">Digital Marketing</option>
+                </select>
+        </form>
     </div>
+    
+    <div id="form__right"> 
+        
+        <h1>Choosing us will be a smart decision</h1>
+        
+        <h2 class="form__right__heading wow bounceIn" data-wow-duration="2.5s"><i class="fas fa-bullseye"></i>&nbsp;Save time</h2>
+        <p  class="form__right__content">You get the fullest efficiency just as your in-house team and faster results as an added bonus by working with our content writing agency.</p>
+        
+        <h2  class="form__right__heading wow bounceIn" data-wow-duration="3s"><i class="fas fa-bullseye"></i>&nbsp;Less investment</h2>
+        <p class="form__right__content">Cost-cutting is easy in India when you don’t have to train new recruitments in your company after hiring our experts in content writing services.</p>
+        
+        <h2  class="form__right__heading wow bounceIn" data-wow-duration="3.5s">  <i class="fas fa-bullseye"></i>&nbsp;Speed and quality</h2>
+        <p class="form__right__content">Get round the clock service and speedy delivery with the top content writing company in India.</p>
+        
+        <h2  class="form__right__heading wow bounceIn" data-wow-duration="4s"><i class="fas fa-bullseye"></i>&nbsp;Minimize risk</h2>
+        <p class="form__right__content">Even if you can’t stay active on holidays, our content writing company will be there to finish assignments on time.</p>
+        
     </div>
+
+</div>
 
 
 <!-- form part end -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-- FAQ start -->
+<div id="faq">
+    <div id="faq__heading">
+        <div id="faq__heading__items">
+            <h1>Frequently Asked Questions</h1>
+            <p>Here is a set of most frequently asked queries by our clients.</p>
+        </div>
+    </div>
+    <div id="faq__content">
+        <div id="faq__content__col1">
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.2s">
+                <h4><a onclick="showmore(1)"  role="button">1. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers" id="faq1">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.3s">
+                <h4><a onclick="showmore(2)"  role="button">2. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq2">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.4s">
+                <h4><a onclick="showmore(3)"  role="button">3. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq3">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.5s">
+                <h4><a onclick="showmore(4)"  role="button">4. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq4">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.6s">
+                <h4><a onclick="showmore(5)"  role="button">5. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq5">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.7s">
+                <h4><a onclick="showmore(6)"  role="button">6. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq6">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            
 
+        </div>
+        <div id="faq__content__col2">
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.2s">
+                <h4><a onclick="showmore(7)" role="button">7. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq7">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.3s">
+                <h4><a onclick="showmore(8)"  role="button">8. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq8">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.4s">
+                <h4><a onclick="showmore(9)"  role="button">9. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq9">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.5s">
+                <h4><a onclick="showmore(10)" role="button">10. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq10">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.6s">
+                <h4><a onclick="showmore(11)"  role="button">11. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq11">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
+            <div class="faq__content__items wow fadeInUp" data-wow-delay="0.7s">
+                <h4><a onclick="showmore(12)"  role="button">12. How will my business benefit from hiring a content writing agency?</a></h4>
+                <hr>
+                <p class="faq__answers"  id="faq12">It is better to get content curated from the best content writing agency as they provide professional content writing services and cater to your content requirements. Some of the reasons to choose Content writing companies in India are:
+                Save time and efforts: By hiring a content writing agency, one can save a lot of time and effort which will be required to train the in-house writers.
+                Minimal investment: Get content writing services for nominal charges and save the cost, which is required to train new employees.
+                </p>
+            </div>
 
+        </div>
 
-
-
-
-
+    </div>
+    <div class="viewMore">
+        
+        <button class="btn btn-warning"id="viewMoreButton" onclick="addMoreFAQ()" >View All FAQ</button>
+    </div>
     
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-crossorigin="anonymous"></script>
+</div>
 
 
+
+
+<!-- FAQ end -->
+
+<!-- Footer & Contact-->
+<footer class="footer-area bg-f wow fadeInUp" data-wow-delay="0.1">
+    <div class="container text-md-left text-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-6" id="contact">
+                <h3>Address</h3>
+                <p class="lead">
+                    4th J Cross New Guruppanpalaya<br>
+                    Krishnappa Graden,<br>
+                    Near Lakshmi Theater<br>
+                    Bangalore<br>
+                    Karnataka, 560029<br>
+                    India
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 pt-sm-5 pt-md-0">
+                <h3>Follow Us</h3>
+                <ul class="list-inline f-social">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+                <h3>Contact</h3>
+                <p class="lead">+91 9353690229</p>
+                <p><a href="#"> goutham4391@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="company-name">All Rights Reserved. &copy; 2020 <a href="index.html">MyKnot Services</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer & Contact End-->
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- WOW Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+<script src="main.js"></script>
     
 
 
