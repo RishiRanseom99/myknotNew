@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
   }
+body{
+  background-color: aliceblue;
+}
   
  
   
@@ -58,12 +61,12 @@ html {
   }
    */
 #industry__logo{
-  width:80%;
-  height: 60vh;
+  width:90%;
+  height: 70vh;
   margin: auto;
-  margin-top: 1vh;
-  background-color: rgb(230, 23, 57);
-  /* overflow: hidden; */
+  margin-top: 0.5vh;
+  /* background-color: rgb(230, 23, 57); */
+  overflow: hidden;
 }
 .image__responsive{
   width: 100%;
@@ -76,14 +79,49 @@ html {
     height: 70vh;
   }
 }
-  .content,
+
+
+
+.advantages{
+  width: 99%;
+  background-color: #cef7fa;
+  padding: 5vw;
+  margin: auto;
+  margin-top: 1vh;
+}
+
+#team__image{
+  width: 100%;
+  height: 100%;
+  /* background-color: red ; */
+}
+#team__image>img{
+  max-width: 100%;
+  height: auto;
+}
+.advantages1{
+  width: 99%;
+  /* background-color: #cef7fa; */
+  padding: 5vw;
+  margin: auto;
+  margin-top: 1vh;
+}
+.contactUsToday{
+  margin-top: 5vh;
+  text-align: center;
+  font-size:35px;
+  font-weight: 500;
+  color: rgb(243, 130, 78);
+}
+  /* .content,
   .benefits {
     background-color: aliceblue;
-  }
+  } */
   
   i {
     color: darkcyan;
   }
+  
   
   .item-card:hover {
     background-color: #ffffff;
