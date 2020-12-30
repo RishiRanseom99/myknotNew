@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* .navbar {
+    background-image: linear-gradient(to right, white, darkcyan, white);
+  } */
+
+.navbar {
+    background-image: linear-gradient(to right, white 3%, white);
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: #26a8a8;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        background-image: linear-gradient(to right, white 3%, white);
+    }
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+
+/* .nav-item {
+    font-size: 18px;
+    color: #ff7d00;
+  }
+   */
+
+h2 {
+    color: rgb(0, 107, 139);
+    font-weight: 600;
+}
+
+p {
+    line-height: 25px;
+    line-break: normal;
+}
+
+
+/*   
+  @media (min-width: 576px) {
+    .navbar .nav-item .dropdown-menu {
+      display: none;
+    }
+    .navbar .nav-item:hover .nav-link {
+      color: #111111;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+  }
+   */
+
+#industry__logo {
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 0.5vh;
+    /* background-color: rgb(230, 23, 57); */
+    overflow: hidden;
+}
+
+.image__responsive {
+    width: 100%;
+    height: 70vh;
+}
+
+@media screen and (max-width: 572px) {
+    #industry__logo {
+        width: 99%;
+        height: 70vh;
+    }
+}
+
+.advantages {
+    width: 99%;
+    background-color: #d6f8f8;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+#team__image {
+    width: 100%;
+    height: 100%;
+    /* background-color: red ; */
+}
+
+#team__image>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.advantages1 {
+    width: 99%;
+    /* background-color: #cef7fa; */
+    padding: 5vw;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+.contactUsToday {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: darkcyan;
+}
+
+
+/* .content,
+  .benefits {
+    background-color: aliceblue;
+  } */
+
+i {
+    color: darkcyan;
+}
+
+.item-card:hover {
+    background-color: #ffffff;
+    /* box-shadow: 3px 3px 5px #111111; */
+}
+
+.description {
+    font-size: 20px;
+}
+
+p i {
+    color: #ffffff;
+    background-color: darkcyan;
+    padding: 1%;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+
+/*------------------------------------------------------------------
+         FOOTER
+-------------------------------------------------------------------*/
+
+.footer-area {
+    margin-top: 10px;
+    padding-top: 50px;
+}
+
+.bg-f {
+    background-color: #111111;
+}
+
+.footer-area .container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-area h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(207, 166, 113, 0.5);
+    margin-bottom: 10px;
+}
+
+.footer-area p {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-area p.lead {
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.footer-area p.lead a {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-area p.lead a:hover {
+    color: #111111;
+}
+
+.footer-area p a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-area p a:hover {
+    color: #fffb00;
+}
+
+.f-social {
+    padding-bottom: 10px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.f-social li a {
+    font-size: 18px;
+    color: #111111;
+    width: 38px;
+    height: 38px;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.f-social li a:hover {
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.copyright {
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 30px 0;
+    z-index: 1;
+}
+
+.copyright .company-name {
+    font-size: 16px;
+    text-align: center;
+}
+
+.copyright p,
+.copyright p a {
+    color: #ffffff;
+}
