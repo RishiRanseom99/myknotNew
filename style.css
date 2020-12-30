@@ -164,6 +164,12 @@ html {
     outline: none;
 
 }
+#form__warnings{
+    color:red;
+}
+#form__submit{
+    margin-top: 1em;
+}
 #form__right{
     width: 60%;
     /* background-color: lightcoral; */

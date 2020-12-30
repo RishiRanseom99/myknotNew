@@ -108,16 +108,18 @@
 <div id="form__section">
     <div id="form__fill">
         <p class="form__right__heading">Discuss Your Budget With Us</p>
-        <form>
-            <input type="text" placeholder=" Name"><br>
-            <input type="email" placeholder=" Email"><br>
-            <input type="tel" placeholder=" Phone-No"><br>
-            <input type="text" placeholder=" Company Name"><br>
-            <select>
+        <p id="form__warnings"></p>
+        <form id="budget__form">
+            <input type="text" placeholder=" Name" id="name" ><br>
+            <input type="email" placeholder=" Email" id="email" ><br>
+            <input type="tel" placeholder=" Phone-No" id="phoneno" ><br>
+            <input type="text" placeholder=" Company Name" id="company"><br>
+            <select id="service">
                 <option name="SEO" value="SEO" disabled selected>Choose your service</option>
                 <option name="SEO" value="SEO">&nbsp;SEO</option>
                 <option name="Digital Marketing" value="Digital Marketing">Digital Marketing</option>
-                </select>
+            </select>
+            <button type="submit" id="form__submit" click="submitForm()" >Submit</button>
         </form>
     </div>
     
@@ -321,8 +323,11 @@
 
 
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
